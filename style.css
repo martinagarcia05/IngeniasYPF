@@ -1,0 +1,79 @@
+:root{
+    --verde-1: #226F54;
+    --verde-2: #87C38F;
+    --rojo: #DA2C38;
+    --crema: #F4F0BB;
+    --marron: #43291F;
+}
+.novedades{
+    grid-area: novedades;
+    background-color: var(--marron);
+}
+.indumentaria{
+    grid-area: indumentaria;
+    background-color: var(--rojo);
+}
+.Calendar{
+    grid-area: calendario;
+    background-color: var(--verde-1);
+    background-color: var(--verde-1);
+}
+.pie{
+    grid-area: pie;
+    background-color: var(--crema);
+}
+body{
+    background-color: var(--crema);
+    display: grid;
+    
+    grid-template-areas: 
+    "header header"
+    "novedades header"
+    "indumentaria indumentaria"
+    "calendario calendario"
+    "footer footer"
+    ;
+}
+header{
+    color: var(--verde-1);
+    /*display: flex;
+    justify-content: center;*/
+    grid-area: header;
+    background-color: var(--verde-2);
+}
+/*
+header img{
+    width: 100px;
+    justify-content: left;
+    margin: 0px 100px 0px 100px;
+
+}
+header p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-style:unset;
+}
+header ul{
+    display: flex;
+    align-items: end;
+}
+header li{
+    display: flex;
+    align-items: center;
+    background-color: var(--verde-1);
+    font-size: small;
+    margin: 10px;
+    text-align: center;
+    border-radius: 7%;
+}
+h2{
+    color: var(--rojo);
+}
+header ul{
+    display: flex;
+
+}
+*/
