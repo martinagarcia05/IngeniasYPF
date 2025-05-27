@@ -1,0 +1,39 @@
+:root{
+    --verde-1: #226F54;
+    --verde-2: #87C38F;
+    --rojo: #DA2C38;
+    --crema: #F4F0BB;
+    --marron: #43291F;
+}
+
+.novedades{
+    background-color: var(--marron);
+    grid-area: nov;
+}
+.indumentaria{
+    background-color: var(--rojo);
+    grid-area: ind;
+}
+.Calendar{
+    background-color: var(--verde-1);
+    grid-area: cal;
+}
+.pie{
+    background-color: var(--crema);
+    grid-area: pie;
+}
+.head{
+    background-color: var(--verde-2);
+    grid-area: hea;
+}
+.cuerpo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "hea hea"
+    "nov nov"
+    "ind ind"
+    "cal" "cal"
+    "pie" "pie";
+    
+}
